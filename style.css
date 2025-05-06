@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    background: #111;
+    padding: 1em 2em;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    position: relative;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    padding: 0.5em 0;
+    border-radius: 6px;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    z-index: 1000;
+  }
+
+  .dropdown-content li {
+    display: block;
+    padding: 0.5em 1em;
+    white-space: nowrap;
+  }
+  
+  .dropdown-content li a {
+    color: #00ffe7;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: #333;
+    color: #ff4081;
+  }
+  
+  /* Hover trigger */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #00ffe7;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff4081;
+  }
+  
+  .hero {
+    height: 80vh;
+    background: linear-gradient(to right, #001f3f, #0074D9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .dark {
+    background: #121212;
+    color: #f2f2f2;
+  }
+  
+  .light {
+    background: #f2f2f2;
+    color: #222;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
+  
+  .feature-img {
+    max-width: 300px;
+    margin: 20px auto;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+  }
+  
+  .card {
+    background: rgba(174, 170, 170, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    width: 260px;
+    transition: transform 0.3s;
+    backdrop-filter: blur(10px);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .button {
+    background: #00ffe7;
+    color: #000;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1%;
+    display: inline-block;
+  }
+  
+  .button:hover {
+    background: #40ffa6;
+    color: #6b6969;
+  }
+  
+  .achievements {
+    list-style: disc;
+    margin: 2em auto;
+    max-width: 800px;
+    text-align: left;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1em;
+    background: #111;
+  }
+  
